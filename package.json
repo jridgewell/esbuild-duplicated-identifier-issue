@@ -1,0 +1,12 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./dist && esbuild --bundle --outdir=dist --minify --format=esm --splitting --target=es2016 src/entry1.js src/entry2.js"
+  },
+  "dependencies": {
+    "esbuild": "^0.11.15"
+  }
+}
